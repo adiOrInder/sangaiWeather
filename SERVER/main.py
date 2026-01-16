@@ -27,17 +27,17 @@ if not OPENWEATHER_API_KEY:
 
 # LOAD MODELS (ONCE AT STARTUP)
 required_models = [
-    "saved_models/rainfall_model.joblib",
-    "saved_models/flood_model.joblib",
-    "saved_models/landslide_model.joblib",
-    "saved_models/earthquake_kmeans.joblib"
+    "MODEL/saved_models/rainfall_model.joblib",
+    "MODEL/saved_models/flood_model.joblib",
+    "MODEL/saved_models/landslide_model.joblib",
+    "MODEL/saved_models/earthquake_kmeans.joblib"
 ]
 
 
-rainfall_model = joblib.load("saved_models/rainfall_model.joblib")
-flood_model = joblib.load("saved_models/flood_model.joblib")
-landslide_model = joblib.load("saved_models/landslide_model.joblib")
-earthquake_model = joblib.load("saved_models/earthquake_kmeans.joblib")
+rainfall_model = joblib.load("MODEL/saved_models/rainfall_model.joblib")
+flood_model = joblib.load("MODEL/saved_models/flood_model.joblib")
+landslide_model = joblib.load("MODEL/saved_models/landslide_model.joblib")
+earthquake_model = joblib.load("MODEL/saved_models/earthquake_kmeans.joblib")
 
 
 # INPUT SCHEMA (FROM KIVY)
