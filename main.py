@@ -1,6 +1,6 @@
-def main():
-    print("Hello from sangaiweather!")
+import os
 
-
-if __name__ == "__main__":
-    main()
+print("Sangai weather")
+#COMMAND TO RUN THE JOBLIB FILES 
+#uv run weatherfinalfinal.py
+os.system("uv run uvicorn main:app --host 0.0.0.0 --port 8000")
